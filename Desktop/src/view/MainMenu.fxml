@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="border" fx:id="UserPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1229.0" stylesheets="@BorderSyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <AnchorPane layoutY="173.0" prefHeight="423.0" prefWidth="1229.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox fx:id="CustomerVBox" layoutX="209.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="409.0" prefWidth="826.0" spacing="50.0">
+               <children>
+                  <HBox prefHeight="192.0" prefWidth="826.0" spacing="50.0">
+                     <children>
+                        <AnchorPane id="menuButtons" fx:id="EditProfile" onMouseClicked="#EditProfileHandler" prefHeight="200.0" prefWidth="214.0" stylesheets="@MenuButtons.css">
+                           <children>
+                              <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="68.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Edit%20Account.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="60.0" layoutY="138.0" prefHeight="18.0" prefWidth="94.0" text="Edit Profile" textFill="#01590a">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="menuButtons" fx:id="SearchDrug" onMouseClicked="#SearchDrugHandler" prefHeight="200.0" prefWidth="214.0" stylesheets="@MenuButtons.css">
+                           <children>
+                              <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="68.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Search.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="133.0" prefHeight="27.0" prefWidth="200.0" text="Search for a Medicine" textFill="#01590a">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="menuButtons" onMouseClicked="#AddMedicineHandler" prefHeight="200.0" prefWidth="214.0" stylesheets="@MenuButtons.css">
+                           <children>
+                              <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="68.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Add%20Database_104px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="17.0" layoutY="133.0" prefHeight="18.0" prefWidth="180.0" text="Add Medicine" textFill="#01590a">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="256.0" prefWidth="826.0" spacing="10.0">
+                     <children>
+                        <AnchorPane id="menuButtons" minWidth="-Infinity" onMouseClicked="#showReportsHandler" prefHeight="100.0" prefWidth="200.0" stylesheets="@MenuButtons.css">
+                           <children>
+                              <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Investment_104px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="17.0" layoutY="152.0" prefHeight="18.0" prefWidth="180.0" text="Sales Report" textFill="#01590a">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane id="menuButtons" fx:id="LogOut" minWidth="-Infinity" onMouseClicked="#LogOutHandler" prefHeight="100.0" prefWidth="200.0" stylesheets="@MenuButtons.css">
+                           <children>
+                              <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="61.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Exit.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="57.0" layoutY="152.0" prefHeight="18.0" prefWidth="86.0" text="Log Out" textFill="#01590a">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="border" fx:id="AnchorUser" layoutX="-1.0" layoutY="-6.0" prefHeight="180.0" prefWidth="1230.0" style="-fx-background-color: linear-gradient(to right,#3CCB8E, #0CBA96);" stylesheets="@BorderSyle.css">
+         <children>
+            <JFXButton id="green" layoutX="986.0" layoutY="91.0" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);" stylesheets="@buttonStyles.css" text="Switch Mode" />
+            <Label fx:id="CurrEmailLabel" layoutX="82.0" layoutY="65.0" prefHeight="25.0" prefWidth="315.0" style="-fx-background-color: #276644; -fx-text-fill: #ffffff;" text="Email :" />
+            <Label fx:id="CurrModeLabel" layoutX="82.0" layoutY="94.0" prefHeight="25.0" prefWidth="315.0" style="-fx-background-color: #276644; -fx-text-fill: #ffffff;" text="User Mode :" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

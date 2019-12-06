@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="border" minHeight="-Infinity" prefHeight="600.0" prefWidth="1229.0" style="-fx-background-color: #ffffff;" stylesheets="@BorderSyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsPageController">
+   <children>
+      <PieChart fx:id="soldPie" layoutX="704.0" layoutY="118.0" prefHeight="434.0" prefWidth="484.0" />
+      <Label alignment="CENTER" layoutX="794.0" layoutY="58.0" prefHeight="50.0" prefWidth="302.0" text="Top Sold Drugs" textFill="#074b00">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="131.0" layoutY="58.0" prefHeight="50.0" prefWidth="286.0" text="Top Sellers" textFill="#074b00">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="sellersPie" layoutX="32.0" layoutY="131.0" prefHeight="430.0" prefWidth="484.0" />
+      <AnchorPane layoutX="611.0" layoutY="45.0" prefHeight="554.0" prefWidth="8.0" style="-fx-background-color: #064A00;" />
+   </children>
+</AnchorPane>

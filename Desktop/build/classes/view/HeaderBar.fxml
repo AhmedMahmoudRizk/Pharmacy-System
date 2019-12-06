@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="HeaderBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="46.0" prefWidth="1229.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HeaderBarController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="1229.0" style="-fx-background-color: #319E7E;">
+         <children>
+            <Label id="exit" alignment="CENTER" layoutX="1187.0" onMouseClicked="#handleClose" prefHeight="46.0" prefWidth="42.0" stylesheets="@exitButton.css" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1137.0" onMouseClicked="#handleClose" prefHeight="44.0" prefWidth="42.0" text="-" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

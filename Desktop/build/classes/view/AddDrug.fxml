@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddMedicinePane" prefHeight="756.0" prefWidth="511.0" style="-fx-background-color: linear-gradient(#3CCB8E, #0CBA96);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDrugController">
+   <children>
+      <JFXTextField fx:id="ClassificationField" focusColor="WHITE" layoutX="174.0" layoutY="236.0" prefHeight="32.0" prefWidth="302.0" promptText="Classification" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton id="green" layoutX="44.0" layoutY="652.0" onMouseClicked="#handleConfirm" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);" stylesheets="@buttonStyles.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Label id="label" layoutX="39.0" layoutY="14.0" prefHeight="86.0" prefWidth="432.0" stylesheets="@LabelStyle.css" text="Add Medicine" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="56.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="DrugName" focusColor="WHITE" layoutX="174.0" layoutY="179.0" prefHeight="32.0" prefWidth="302.0" promptText="Drug Name" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="AmountField" focusColor="WHITE" layoutX="173.0" layoutY="404.0" prefHeight="32.0" prefWidth="302.0" promptText="Amount" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="IDField" focusColor="WHITE" layoutX="174.0" layoutY="121.0" prefHeight="0.0" prefWidth="302.0" promptText="Drug ID" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="ConcetrationField" focusColor="WHITE" layoutX="174.0" layoutY="290.0" prefHeight="26.0" prefWidth="302.0" promptText="Concentration" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="AddMedicineErrorLabel" alignment="CENTER" layoutX="9.0" layoutY="710.0" prefHeight="32.0" prefWidth="494.0" style="-fx-background-color: #ffffff;" text="ALL FIELD ARE REQUIRED" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="652.0" onMouseClicked="#handleClose" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: #3FCC8D;" text="Cancel">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <ChoiceBox fx:id="medType" layoutX="173.0" layoutY="455.0" prefHeight="32.0" prefWidth="302.0" />
+      <Label layoutX="48.0" layoutY="455.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="PD" layoutX="81.0" layoutY="606.0" prefHeight="26.0" prefWidth="146.0" />
+      <DatePicker fx:id="ED" layoutX="340.0" layoutY="606.0" prefHeight="26.0" prefWidth="146.0" />
+      <Label layoutX="31.0" layoutY="599.0" prefHeight="40.0" prefWidth="42.0" text="PD" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="599.0" prefHeight="40.0" prefWidth="42.0" text="ED" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="122.0" prefHeight="40.0" prefWidth="115.0" text="DrugID" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="179.0" prefHeight="32.0" prefWidth="115.0" text="DName" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="237.0" prefHeight="40.0" prefWidth="115.0" text="Class." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="291.0" prefHeight="40.0" prefWidth="115.0" text="Conc." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="353.0" prefHeight="32.0" prefWidth="115.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="409.0" prefHeight="32.0" prefWidth="115.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="BatchID" focusColor="WHITE" layoutX="177.0" layoutY="493.0" prefHeight="32.0" prefWidth="302.0" promptText="Batch ID" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="498.0" prefHeight="32.0" prefWidth="115.0" text="BatchID" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="QuantityField" focusColor="WHITE" layoutX="175.0" layoutY="551.0" prefHeight="32.0" prefWidth="302.0" promptText="Quantity" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="556.0" prefHeight="32.0" prefWidth="115.0" text="Quantity" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="PriceField" focusColor="WHITE" layoutX="173.0" layoutY="348.0" prefHeight="26.0" prefWidth="302.0" promptText="Price" style="-fx-background-color: #FFFFFF;" unFocusColor="#030161">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

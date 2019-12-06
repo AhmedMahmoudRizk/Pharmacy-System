@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="border" fx:id="DrugSellPane" prefHeight="303.0" prefWidth="408.0" style="-fx-background-color: #ffffff;" stylesheets="@BorderSyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SellDrugDialogController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="4.0" prefHeight="69.0" prefWidth="464.0" style="-fx-background-color: linear-gradient(to right,#3CCB8E, #0CBA96);" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Label id="label" layoutX="14.0" layoutY="18.0" prefHeight="36.0" prefWidth="306.0" stylesheets="@LabelStyle.css" text="Enter Quantity that is sold " textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton id="green" layoutX="90.0" layoutY="248.0" onMouseClicked="#handleConfirm" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);" stylesheets="@buttonStyles.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="257.0" layoutY="248.0" onMouseClicked="#handleClose" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #3FCC8D;" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="26.0" layoutY="109.0" text="DrugID">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="165.0" text="Quantity">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="drugIDLabel" layoutX="202.0" layoutY="108.0" prefHeight="46.0" prefWidth="191.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="quantityField" layoutX="202.0" layoutY="174.0" prefHeight="26.0" prefWidth="191.0" />
+   </children>
+</AnchorPane>

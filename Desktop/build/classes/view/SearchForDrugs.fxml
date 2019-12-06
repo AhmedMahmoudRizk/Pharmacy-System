@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="border" fx:id="SearchPane" prefHeight="691.0" prefWidth="1229.0" stylesheets="@BorderSyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchForDrugsController">
+   <children>
+      <AnchorPane prefHeight="128.0" prefWidth="1230.0" style="-fx-background-color: linear-gradient(to right,#3CCB8E, #0CBA96);" AnchorPane.bottomAnchor="565.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="label" layoutX="50.0" layoutY="64.0" prefHeight="42.0" prefWidth="465.0" stylesheets="@LabelStyle.css" text="Search For Medicine" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="CurrEmailLabel" layoutX="944.0" layoutY="82.0" prefHeight="17.0" prefWidth="271.0" text="Email :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="drugIDBox" focusColor="#3caf57" layoutX="19.0" layoutY="148.0" prefHeight="25.0" prefWidth="150.0" promptText="DrugID" />
+      <JFXTextField fx:id="nameBox" focusColor="#42b247" layoutX="353.0" layoutY="148.0" prefHeight="25.0" prefWidth="163.0" promptText="Name" />
+      <JFXTextField fx:id="classificationBox" focusColor="#40a847" layoutX="684.0" layoutY="148.0" prefHeight="25.0" prefWidth="193.0" promptText="Classification" />
+      <JFXTextField fx:id="concentrationBox" layoutX="1036.0" layoutY="148.0" prefHeight="25.0" prefWidth="176.0" promptText="Concentration" />
+      <JFXTextField fx:id="priceBox" focusColor="#40a85b" layoutX="12.0" layoutY="222.0" prefHeight="26.0" prefWidth="163.0" promptText="Selling Price" />
+      <JFXTextField fx:id="amountBox" focusColor="#40a856" layoutX="359.0" layoutY="222.0" prefHeight="25.0" prefWidth="150.0" promptText="Amount" />
+      <ChoiceBox fx:id="medType" layoutX="674.0" layoutY="222.0" prefHeight="26.0" prefWidth="194.0" />
+      <Label layoutX="747.0" layoutY="204.0" prefHeight="3.0" prefWidth="48.0" text="Type" />
+      <TableView fx:id="TableView" layoutX="7.0" layoutY="263.0" prefHeight="430.0" prefWidth="1215.0">
+         <columns>
+            <TableColumn prefWidth="54.39999485015869" text="DrugID" />
+            <TableColumn prefWidth="174.40002059936523" text="Name" />
+            <TableColumn prefWidth="163.2000274658203" text="Classification" />
+            <TableColumn prefWidth="93.5999755859375" text="Concentration" />
+            <TableColumn minWidth="9.0" prefWidth="58.4000244140625" text="Price" />
+            <TableColumn minWidth="9.0" prefWidth="99.99993896484375" text="Amount" />
+            <TableColumn prefWidth="123.2000732421875" text="Type" />
+            <TableColumn prefWidth="93.599853515625" text="Batch ID" />
+            <TableColumn prefWidth="144.0" text="ProduceDate" />
+            <TableColumn prefWidth="111.20001220703125" text="ExpireDate" />
+            <TableColumn minWidth="8.7999267578125" prefWidth="94.39990234375" text="Quantitity" />
+         </columns>
+      </TableView>
+      <JFXButton id="green" layoutX="1101.0" layoutY="200.0" onMouseClicked="#onSearch" prefHeight="41.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);" stylesheets="@buttonStyles.css" text="Search" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="green" layoutX="958.0" layoutY="201.0" prefHeight="41.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);" stylesheets="@buttonStyles.css" text="Refresh" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
